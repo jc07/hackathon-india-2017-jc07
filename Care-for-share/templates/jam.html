@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Wuba-luba-dub-dub</title>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/signup.css" rel="stylesheet">
+    
+  </head>
+ 
+  <body background="/home/johnny/Desktop/Flaskapp/images/jam.jpg">
+  
+     
+      <div class="jumbotron">
+
+      <h1>Traffic Jam</h1>
+
+       <form action="/inform" class="form-signin" method="POST">
+
+       <label for="inputtime" class="sr-only">Time</label>
+       <input type="name" name="inputtime" id="inputtime"  class="form-control" placeholder="How long ? {in Hours }" required autofocus>
+
+
+       <label for="inputarea" class="sr-only">Influence Area</label>
+       <input type="name" name="inputarea" id="inputarea"  class="form-control" placeholder="Effected Area ? {in KMs }" required autofocus>
+
+       
+      <!--  <label for="inputEmail" class="sr-only">Email address</label>
+       <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus> -->
+
+
+
+
+      <input type="submit" class="btn btn-lg btn-primary btn-block" value="Inform" />
+
+      </form>
+      </div>
+ 
+       
+ 
+      <footer class="footer">
+      <p>&copy; Share-for-Care 2017</p>
+      </footer>
+ 
+    </div>
+  </body>
+</html>

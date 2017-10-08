@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Wuba-luba-dub-dub</title>
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet"> 
+
+
+    <input type="file" id="fileinput" />
+
+    <script type="text/javascript">
+
+
+          function readSingleFile(evt) {
+            //Retrieve the first (and only!) File from the FileList object
+            var f = evt.target.files[0]; 
+
+            if (f.size) {
+              var r = new FileReader();
+              r.onload = function(e) { 
+                  var contents = e.target.result;
+                alert("Rick Has Reported Heavy Rains Near you in Hiranandani! Stay safe :)" );  
+               }
+              r.readAsText(f);
+             }
+            else{
+              alert("Peace Hai!")
+            } 
+            }
+
+          document.getElementById('fileinput').addEventListener('change', readSingleFile, false);
+
+
+</script>
+
+
+</head>
+ 
+<body>
+ 
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation"><a href="#"> Hello, </a>
+                    </li>
+                    <li role="presentation"><a href="showMyacc"> Morty</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Care-Update-Save</h3>
+        </div>
+ 
+        <div class="jumbotron">
+            <h1>Share-for-Care</h1>
+            <p class="lead"></p>
+            <p><a class="btn btn-lg btn-success" href="showNotify" role="button">Notify now</a>
+            </p>
+        </div>
+
+
+   <!--  <iframe id="frmFile" src="check1.txt" onload="LoadFile();" style="display: none;"></iframe> -->
+
+    <iframe width="1000" height="700" frameborder="2" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJkbeSa_BfYzARphNChaFPjNc&key=AIzaSyDqR6zSdXG3kV1inSxIwdjVOFLszk0oR5I" allowfullscreen></iframe>
+ 
+ 
+        <footer class="footer">
+            <p>&copy; Share-for-Care 2017</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>
